@@ -3,20 +3,16 @@
 Namespace Excercises\Squint;
 
 class Integers{
-
-    public function __construct(){
-        $this->powArr = array();
-    }
-
     function take($elems, $collection) {
+        $i = 0;
+        $powArr = array();
         foreach($collection as $pow){
-            static $i = 0;
             $i++;
 
             if( $i<= $elems ){
-                $this->powArr[] = $pow;
+                $powArr[] = $pow;
             } else {
-                return $this->powArr;
+                return $powArr;
                 break;
             }
         }
