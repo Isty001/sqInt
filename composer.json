@@ -1,0 +1,22 @@
+{
+    "name": "excercises/squint",
+    "description": "",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Miklós",
+            "email": "miklos.martin@gmail.com"
+        }
+    ],
+    "require": {
+      "php": ">=5.5",
+      "phpunit/phpunit": "~4.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Excercises\\Squint\\": "src",
+            "Excercises\\Squint\\Tests\\": "tests"
+        },
+        "files": ["src/functions.php"]
+    }
+}
